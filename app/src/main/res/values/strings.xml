@@ -7,4 +7,5 @@
     <string name="support_text">Телефонная поддержка</string>
     <string name="login_button_caption">войти</string>
     <string name="logo_description">Логотип</string>
+    <string name="header_text">ШАБЛОНЫ ОТЧЕТОВ</string>
 </resources>

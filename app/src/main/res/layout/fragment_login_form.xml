@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="ua.cn.gmoby.spot2d.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/logoLayout"
+        android:layout_weight="0.35"
+        android:layout_height="0dp"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/buttonLayout"
+        android:layout_weight="0.55"
+        android:layout_height="0dp"
+        android:layout_width="match_parent">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginEditText"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:inputType="text"
+            android:hint="@string/login_hint"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:drawableRight="@drawable/login_hint_icon"
+            android:maxLines="1"
+            android:minLines="1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordEditTex"
+            android:inputType="textPassword"
+            android:hint="@string/password_hint"
+            android:layout_below="@+id/loginEditText"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:drawableRight="@drawable/password_hint_icon"
+            android:minLines="1"
+            android:maxLines="1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/urlEditText"
+            android:hint="@string/url_hint"
+            android:layout_below="@+id/passwordEditTex"
+            android:layout_alignLeft="@+id/passwordEditTex"
+            android:layout_alignStart="@+id/passwordEditTex"
+            android:layout_alignRight="@+id/passwordEditTex"
+            android:layout_alignEnd="@+id/passwordEditTex"
+            android:drawableRight="@drawable/url_hint_icon"
+            android:maxLines="1"
+            android:minLines="1" />
+
+        <LinearLayout
+            android:id="@+id/infoLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight=".50"
+                android:text="@string/support_text"
+                android:id="@+id/supportTextView"
+                android:textSize="16sp"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/phone_text"
+                android:id="@+id/phoneTextView"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/phone_icon"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginButton"
+            android:background="@drawable/button"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/urlEditText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</LinearLayout>
